@@ -9,7 +9,6 @@ const Post = ({ post, onDelete, onEdit, children }) => {
       <Image source={{ uri: post.image }} style={styles.image} />
       <View style={styles.buttonContainer}>
         <Button title="Eliminar" onPress={() => onDelete(post.id)} color="#ff6347" />
-        <Button title="Editar" onPress={() => onEdit(post)} color="#1e90ff" />
       </View>
       {children}
     </View>
